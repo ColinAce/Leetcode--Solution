@@ -11,7 +11,7 @@ https://leetcode-cn.com/problems/unique-paths-ii/
 网格中的障碍物和空位置分别用 1 和 0 来表示。
 说明：m 和 n 的值均不超过 100。
 ```
-![](https://tva1.sinaimg.cn/large/0082zybply1gca6k99jmoj30b4053mxa.jpg)
+![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/22/robot_maze.png)
 
 ## 前置知识
 
