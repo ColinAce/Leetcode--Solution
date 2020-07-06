@@ -8,4 +8,4 @@ Leetcode--Solution
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|63|[Unique Paths II](https://leetcode-cn.com/problems/unique-paths-ii/) | [C++](./algorithms/cpp/UniquePathsII/uniquepathsii.cpp)|Medium|
+|63|[Unique Paths II](https://leetcode-cn.com/problems/unique-paths-ii/) | [C++](./algorithms/uniquepathsii.md)|Medium|
