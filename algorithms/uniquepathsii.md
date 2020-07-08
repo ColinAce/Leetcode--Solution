@@ -72,3 +72,34 @@ public:
 
 - 时间复杂度：$O(M * N)$
 - 空间复杂度：$O(M * N)$
+
+## 空间优化
+
+我们可以运用「滚动数组思想」把空间复杂度优化成O(m)。「滚动数组思想」是一种常见的动态规划优化方法，当我们定义的状态在动态规划的转移方程中只和某几个状态相关的时候，就可以考虑这种优化方法，目的是给空间复杂度「降维」。
+
+经过优化之后的代码为：
+```
+class Solution {
+public:
+    int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
+        int n = obstacleGrid.size(), m = obstacleGrid.at(0).size();
+        vector <int> f(m);
+
+        f[0] = (obstacleGrid[0][0] == 0);
+        for (int i = 0; i < n; ++i) {
+            for (int j = 0; j < m; ++j) {
+                if (obstacleGrid[i][j] == 1) {
+                    f[j] = 0;
+                    continue;
+                }
+                if (j - 1 >= 0 && obstacleGrid[i][j - 1] == 0) {
+                    f[j] += f[j - 1];
+                }
+            }
+        }
+
+        return f.back();
+    }
+};
+
+```
