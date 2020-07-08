@@ -9,6 +9,7 @@ Leetcode--Solution
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |63|[Unique Paths II](https://leetcode-cn.com/problems/unique-paths-ii/) | [C++](./algorithms/uniquepathsii.md)|Medium|
+|112|[Paths Sum](https://leetcode-cn.com/problems/path-sum/) | [C++](./algorithms/pathsum.md)|Easy|
 
 ## 基本算法
 
