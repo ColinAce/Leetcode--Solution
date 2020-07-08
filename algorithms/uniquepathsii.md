@@ -19,8 +19,56 @@ https://leetcode-cn.com/problems/unique-paths-ii/
 
 ## 思路
 
-我们用 f(i,j)f(i, j)f(i,j) 来表示从坐标 (0,0)(0, 0)(0,0) 到坐标 (i,j)(i, j)(i,j) 的路径总数，u(i,j)u(i, j)u(i,j) 表示坐标 (i,j)(i, j)(i,j) 是否可行，如果坐标 (i,j)(i, j)(i,j) 有障碍物，u(i,j)=0u(i, j) = 0u(i,j)=0，否则 u(i,j)=1u(i, j) = 1u(i,j)=1。
-因为「机器人每次只能向下或者向右移动一步」，所以从坐标 (0,0)(0, 0)(0,0) 到坐标 (i,j)(i, j)(i,j) 的路径总数的值只取决于从坐标 (0,0)(0, 0)(0,0) 到坐标 (i−1,j)(i - 1, j)(i−1,j) 的路径总数和从坐标 (0,0)(0, 0)(0,0) 到坐标 (i,j−1)(i, j - 1)(i,j−1) 的路径总数，即 f(i,j)f(i, j)f(i,j) 只能通过 f(i−1,j)f(i - 1, j)f(i−1,j) 和 f(i,j−1)f(i, j - 1)f(i,j−1) 转移得到。当坐标 (i,j)(i, j)(i,j) 本身有障碍的时候，任何路径都到到不了 f(i,j)f(i, j)f(i,j)，此时 f(i,j)=0f(i, j) = 0f(i,j)=0；下面我们来讨论坐标 (i,j)(i, j)(i,j) 没有障碍的情况：如果坐标 (i−1,j)(i - 1, j)(i−1,j) 没有障碍，那么就意味着从坐标 (i−1,j)(i - 1, j)(i−1,j) 可以走到 (i,j)(i, j)(i,j)，即 (i−1,j)(i - 1, j)(i−1,j) 位置对 f(i,j)f(i, j)f(i,j) 的贡献为 f(i−1,j)f(i - 1, j)f(i−1,j)，同理，当坐标 (i,j−1)(i, j - 1)(i,j−1) 没有障碍的时候，(i,j−1)(i, j - 1)(i,j−1) 位置对 f(i,j)f(i, j)f(i,j) 的贡献为 f(i,j−1)f(i, j - 1)f(i,j−1)。综上所述，我们可以得到这样的动态规划转移方程：
-f(i,j)={0,u(i,j)=0f(i−1,j)+f(i,j−1),u(i,j)≠0f(i, j) = \left \{ \begin{aligned}
-    0 & , & u(i, j) = 0 \\
-f(i - 1, j) + f(i, j - 1) & , & u(i, j) \neq 0 \end{aligned} \right. f(i,j)={0f(i−1,j)+f(i,j−1)​,,​u(i,j)=0u(i,j)​=0​
+典型的动态规划题型，它和爬楼梯、背包等问题都属于动态规划肿较简单的问题，经常出现在面试之中。
+假设我们定义到达右下角的走法数为 f(m,n), 因为右下角只能由它上方或者左方的格子走过去，因此可以很容易的写出递归求解式，即 f(m,n)=f(m−1,n)+f(m,n−1)，最后加上递归终止条件。二维数组中自顶向下的递推，即 dp[i,j]=dp[i−1,j]+dp[i,j−1]。
+
+### 1、状态定义
+
+dp[i][j] 表示走到格子 (i,j)的路径数量。
+
+### 2、状态转移
+
+如果网格 (i,j)上有障碍物，则 dp[i][j]值为0，表示走到该格子的方法数为0；
+否则网格 (i,j)可以从网格 (i−1,j)或者 网格 (i,j−1)走过来，因此走到该格子的方法数为走到网格 (i−1,j)和网格 (i,j−1)的方法数之和，即 dp[i,j]=dp[i−1,j]+dp[i,j−1]。
+
+### 3、初始条件
+
+第 1 列的格子只有从其上边格子走过去这一种走法，因此初始化 dp[i][0] 值为 1，存在障碍物时为 0；
+第 1 行的格子只有从其左边格子走过去这一种走法，因此初始化 dp[0][j] 值为 1，存在障碍物时为 0。
+
+## 代码实现
+
+C++：
+
+```
+class Solution {
+public:
+    int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
+        int row = obstacleGrid.size();
+        int col = obstacleGrid[0].size();
+        vector<vector<int>> dp(row,vector<int>(col,0));
+
+        for(int i=0;i<col;i++){
+            if(obstacleGrid[0][i]) break;
+            else dp[0][i] = 1;
+        }
+        for(int i=0;i<row;i++){
+            if(obstacleGrid[i][0]) break;
+            else dp[i][0] = 1;
+        }
+
+        for(int i=1;i<row;i++){
+            for(int j=1;j<col;j++){
+                if(!obstacleGrid[i][j])
+                dp[i][j] = dp[i][j-1] + dp[i-1][j];
+            }
+        }
+        return dp[row-1][col-1];
+    }
+};
+```
+
+**复杂度分析**
+
+- 时间复杂度：$O(M * N)$
+- 空间复杂度：$O(M * N)$
