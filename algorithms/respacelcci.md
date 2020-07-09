@@ -4,7 +4,9 @@ https://leetcode-cn.com/problems/re-space-lcci/
 
 ## 题目描述
 ```
-哦，不！你不小心把一个长篇文章中的空格、标点都删掉了，并且大写也弄成了小写。像句子"I reset the computer. It still didn’t boot!"已经变成了"iresetthecomputeritstilldidntboot"。在处理标点符号和大小写之前，你得先把它断成词语。当然了，你有一本厚厚的词典dictionary，不过，有些词没在词典里。假设文章用sentence表示，设计一个算法，把文章断开，要求未识别的字符最少，返回未识别的字符数。
+哦，不！你不小心把一个长篇文章中的空格、标点都删掉了，并且大写也弄成了小写。像句子"I reset the computer. It still didn’t boot!"
+已经变成了"iresetthecomputeritstilldidntboot"。在处理标点符号和大小写之前，你得先把它断成词语。当然了，你有一本厚厚的词典dictionary，
+不过，有些词没在词典里。假设文章用sentence表示，设计一个算法，把文章断开，要求未识别的字符最少，返回未识别的字符数。
 
 注意：本题相对原题稍作改动，只需返回未识别的字符数
 
@@ -31,7 +33,21 @@ sentence = "jesslookedjustliketimherbrother"
 假设前i个字符的最少未匹配数为x，计算前i+1个字符的最少未匹配数。如果第i+1个字符加入后前i+1个字符肿从某个字符开始到第i+1个字符组成的字符串刚好与dictionary中
 某单词匹配，则前i+1个字符的最少未匹配数为那个字符之前的字符串的最少未匹配数，否则为前i个字符的最少未匹配数+1。假设那个字符下标为idx，则dp[i] = min(dp[i],dp[idx])。
 
-## 初始条件
+
+### 1、状态定义
+
+dp[i]表示前i个字符的最少未匹配数
+
+### 2、状态转移
+
+假设当前我们已经考虑完了前i个字符了，对于前i + 1个字符对应的最少未匹配数：
+
+第i + 1个字符未匹配，则dp[i + 1]=dp[i] + 1，即不匹配数加1;
+遍历前i个字符，若以其中某一个下标idx为开头、以第i + 1个字符为结尾的字符串正好在词典里，则 dp[i] = min(dp[i], dp[idx]) 更新 dp[i]。
+
+
+## 3、初始条件
+
 dp[0] = 0
 
 ## 代码实现
