@@ -16,6 +16,6 @@ Leetcode--Solution
 ## 基本算法
 
 ### 动态规划
-[0063.unique-paths-ii](./algorithms/uniquepathsii.md)]
-[面试题17.13.re-space-lcci](./algorithms/respacelcci.md)]
-[0309.best-time-to-buy-and-sell-stock-with-cooldown](./algorithms/besttimetobuyandsellstockwithcooldown.md)]
+- [0063.unique-paths-ii](./algorithms/uniquepathsii.md)
+- [面试题17.13.re-space-lcci](./algorithms/respacelcci.md)
+- [0309.best-time-to-buy-and-sell-stock-with-cooldown](./algorithms/besttimetobuyandsellstockwithcooldown.md)
