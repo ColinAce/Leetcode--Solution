@@ -23,6 +23,7 @@ Leetcode--Solution
 ## 基本算法
 
 ### 动态规划
+- [0005.longest-palindromic-substring](./algorithms/longestPalindrome.md)
 - [0063.unique-paths-ii](./algorithms/uniquepathsii.md)
 - [0174.dungeon-game](./algorithms/dungeongame.md)
 - [面试题17.13.re-space-lcci](./algorithms/respacelcci.md)
