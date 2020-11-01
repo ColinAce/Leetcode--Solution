@@ -8,11 +8,11 @@ Leetcode--Solution
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|1|[Two Sum](https://leetcode-cn.com/problems/two-sum/) | [Java](./algorithms/twosum.md)|Easy|
 |2|[Add Two Numbers](https://leetcode-cn.com/problems/add-two-numbers/) | [Java](./algorithms/addtwonumbers.md)|Medium|
 |3|[Longest Substring](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [Java](./algorithms/longestSubstring.md)|Medium|
 |4|[Median Of Two Sorted Arrays](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/) | [Java](./algorithms/findMedianSortedArrays.md)|Hard|
-|5|[Longest Palindrome](https://leetcode-cn.com/problems/longest-palindromic-substring/) | [Java](./algorithms/longestPalindrome.md)|Hard|
+|5|[Longest Palindrome](https://leetcode-cn.com/problems/longest-palindromic-substring/) | [Java](./algorithms/longestPalindrome.md)|Medium|
+|6|[Zigzag Conversion](https://leetcode-cn.com/problems/zigzag-conversion/) | [Java](./algorithms/zigzagConversion.md)|Medium|
 |63|[Unique Paths II](https://leetcode-cn.com/problems/unique-paths-ii/) | [C++](./algorithms/uniquepathsii.md)|Medium|
 |112|[Paths Sum](https://leetcode-cn.com/problems/path-sum/) | [C++](./algorithms/pathsum.md)|Easy|
 |174|[Dungeon Game](https://leetcode-cn.com/problems/dungeon-game/) | [C++](./algorithms/dungeongame.md)|Hard|
