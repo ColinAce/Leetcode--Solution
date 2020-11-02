@@ -90,15 +90,13 @@ public boolean isMatch(String s,String p) {
 		return dp[m][n];
 	}
 	public boolean matches(String s,String p,int i,int j) { //判断两个字符是否匹配
-        char[] sCharArray = s.toCharArray();
-            char[] pCharArray = p.toCharArray();
 		if(i == 0) {
 			return false;
 		}
-		if(pCharArray[j - 1] == '.') {
-			return true;
-		}
-		return sCharArray[i - 1] == pCharArray[j - 1];
+		if (p.charAt(j - 1) == '.') {
+            return true;
+        }
+        return s.charAt(i - 1) == p.charAt(j - 1);
 	}
 ```
 
