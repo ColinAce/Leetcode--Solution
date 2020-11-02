@@ -13,6 +13,7 @@ Leetcode--Solution
 |4|[Median Of Two Sorted Arrays](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/) | [Java](./algorithms/findMedianSortedArrays.md)|Hard|
 |5|[Longest Palindrome](https://leetcode-cn.com/problems/longest-palindromic-substring/) | [Java](./algorithms/longestPalindrome.md)|Medium|
 |6|[Zigzag Conversion](https://leetcode-cn.com/problems/zigzag-conversion/) | [Java](./algorithms/zigzagConversion.md)|Medium|
+|10|[RegularExpressionMatching](https://leetcode-cn.com/problems/regular-expression-matching/) | [Java](./algorithms/RegularExpressionMatching.md)|Hard|
 |63|[Unique Paths II](https://leetcode-cn.com/problems/unique-paths-ii/) | [C++](./algorithms/uniquepathsii.md)|Medium|
 |112|[Paths Sum](https://leetcode-cn.com/problems/path-sum/) | [C++](./algorithms/pathsum.md)|Easy|
 |174|[Dungeon Game](https://leetcode-cn.com/problems/dungeon-game/) | [C++](./algorithms/dungeongame.md)|Hard|
