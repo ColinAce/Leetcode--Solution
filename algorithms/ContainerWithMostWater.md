@@ -9,11 +9,6 @@ https://leetcode-cn.com/problems/container-with-most-water/submissions/
 
 说明：你不能倾斜容器。
 
-```
-
-![](https://github.com/ColinAce/Leetcode--Solution/pic/question_11.jpg)
-
-```
 示例1：
 输入：[1,8,6,2,5,4,8,3,7]
 输出：49 
@@ -31,5 +26,7 @@ https://leetcode-cn.com/problems/container-with-most-water/submissions/
 输入：height = [1,2,1]
 输出：2
 ```
+![](https://github.com/ColinAce/Leetcode--Solution/pic/question_11.jpg)
+
 
 ## 题目分析
