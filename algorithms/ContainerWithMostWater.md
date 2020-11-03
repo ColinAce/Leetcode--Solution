@@ -8,7 +8,10 @@ https://leetcode-cn.com/problems/container-with-most-water/submissions/
 和 (i, 0) 。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
 
 说明：你不能倾斜容器。
+```
+![](https://github.com/ColinAce/Leetcode--Solution/blob/master/pic/question_11.jpg)
 
+```
 示例1：
 输入：[1,8,6,2,5,4,8,3,7]
 输出：49 
@@ -26,7 +29,6 @@ https://leetcode-cn.com/problems/container-with-most-water/submissions/
 输入：height = [1,2,1]
 输出：2
 ```
-![](https://github.com/ColinAce/Leetcode--Solution/blob/master/pic/question_11.jpg)
 
 
 ## 题目分析
