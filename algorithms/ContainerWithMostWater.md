@@ -32,3 +32,31 @@ https://leetcode-cn.com/problems/container-with-most-water/submissions/
 
 
 ## 题目分析
+```
+双指针：
+    本题是一道经典的面试题，最优的做法是使用「双指针」。
+    双指针代表的是 可以作为容器边界的所有位置的范围。在一开始，双指针指向数组的左右边界，表示数组中所有的位置都可以作为容器的边界，
+    因为我们还没有进行过任何尝试。在这之后，我们每次将 对应的数字较小的那个指针往另一个指针的方向移动一个位置，就表示我们认为这个
+    指针不可能再作为容器的边界了。
+
+    这样一来，我们将问题的规模减小了1，被我们丢弃的那个位置就相当于消失了。此时的左右指针，就指向了一个新的、规模减少了的问题的数组
+    的左右边界，因此，我们可以继续像之前考虑第一步那样考虑这个问题：
+        求出当前双指针对应的容器的容量；
+        对应数字较小的那个指针以后不可能作为容器的边界了，将其丢弃，并移动对应的指针。
+```
+
+
+## 代码实现
+```
+public int maxArea(int[] height) {
+        int left = 0,right = height.length - 1;
+        int ans = 0;
+        while(left<right){
+            int temp = Math.min(height[left],height[right]) * (right - left);
+            ans = Math.max(ans,temp);
+            if(height[left] > height[right])    --right;
+            else    ++left;
+        }
+        return ans;
+    }
+```
