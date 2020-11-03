@@ -60,3 +60,7 @@ public int maxArea(int[] height) {
         return ans;
     }
 ```
+
+## 复杂度分析
+- 时间复杂度：O(n)   遍历一遍数组
+- 空间复杂度：O(1)
