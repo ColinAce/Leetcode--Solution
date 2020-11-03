@@ -26,7 +26,7 @@ https://leetcode-cn.com/problems/container-with-most-water/submissions/
 输入：height = [1,2,1]
 输出：2
 ```
-![](https://github.com/ColinAce/Leetcode--Solution/pic/question_11.jpg)
+![](https://github.com/ColinAce/Leetcode--Solution/blob/master/pic/question_11.jpg)
 
 
 ## 题目分析
