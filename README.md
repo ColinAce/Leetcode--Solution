@@ -15,6 +15,7 @@ Leetcode--Solution
 |6|[Zigzag Conversion](https://leetcode-cn.com/problems/zigzag-conversion/) | [Java](./algorithms/zigzagConversion.md)|Medium|
 |10|[RegularExpressionMatching](https://leetcode-cn.com/problems/regular-expression-matching/) | [Java](./algorithms/RegularExpressionMatching.md)|Hard|
 |11|[ContainerWithMostWater](https://leetcode-cn.com/problems/container-with-most-water/submissions/) | [Java](./algorithms/ContainerWithMostWater.md)|Medium|
+|20|[ValidParentheses](https://leetcode-cn.com/problems/valid-parentheses/) | [Java](./algorithms/validparentheses.md)|Medium|
 |63|[Unique Paths II](https://leetcode-cn.com/problems/unique-paths-ii/) | [C++](./algorithms/uniquepathsii.md)|Medium|
 |112|[Paths Sum](https://leetcode-cn.com/problems/path-sum/) | [C++](./algorithms/pathsum.md)|Easy|
 |174|[Dungeon Game](https://leetcode-cn.com/problems/dungeon-game/) | [C++](./algorithms/dungeongame.md)|Hard|
@@ -26,6 +27,7 @@ Leetcode--Solution
 
 ### 动态规划
 - [0005.longest-palindromic-substring](./algorithms/longestPalindrome.md)
+- [0010.regular-expression-matching](./algorithms/RegularExpressionMatching.md)
 - [0063.unique-paths-ii](./algorithms/uniquepathsii.md)
 - [0174.dungeon-game](./algorithms/dungeongame.md)
 - [面试题17.13.re-space-lcci](./algorithms/respacelcci.md)
