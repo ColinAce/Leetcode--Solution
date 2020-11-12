@@ -37,7 +37,7 @@ Leetcode--Solution
 - [0309.best-time-to-buy-and-sell-stock-with-cooldown](./algorithms/besttimetobuyandsellstockwithcooldown.md)
 
 ### 分治法
-
+- [0023.MergeKSortedLists](./algorithms/mergeksortedlists.md)
 
 ### 查找算法
 - [0004.findMedianSortedArrays(二分查找)](./algorithms/findMedianSortedArrays.md)
