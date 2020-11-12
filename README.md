@@ -17,6 +17,8 @@ Leetcode--Solution
 |11|[ContainerWithMostWater](https://leetcode-cn.com/problems/container-with-most-water/submissions/) | [Java](./algorithms/ContainerWithMostWater.md)|Medium|
 |20|[ValidParentheses](https://leetcode-cn.com/problems/valid-parentheses/) | [Java](./algorithms/validparentheses.md)|Medium|
 |21|[MergeTwoSortedLists](https://leetcode-cn.com/problems/merge-two-sorted-lists/submissions/) | [Java](./algorithms/mergetwosortedlists.md)|Medium|
+|22|[GenerateParentheses](https://leetcode-cn.com/problems/generate-parentheses/) | [Java](./algorithms/generateparentheses.md)|Medium|
+|23|[MergeKSortedLists](https://leetcode-cn.com/problems/merge-k-sorted-lists/) | [Java](./algorithms/mergeksortedlists.md)|Hard|
 |63|[Unique Paths II](https://leetcode-cn.com/problems/unique-paths-ii/) | [C++](./algorithms/uniquepathsii.md)|Medium|
 |112|[Paths Sum](https://leetcode-cn.com/problems/path-sum/) | [C++](./algorithms/pathsum.md)|Easy|
 |174|[Dungeon Game](https://leetcode-cn.com/problems/dungeon-game/) | [C++](./algorithms/dungeongame.md)|Hard|
@@ -33,6 +35,9 @@ Leetcode--Solution
 - [0174.dungeon-game](./algorithms/dungeongame.md)
 - [面试题17.13.re-space-lcci](./algorithms/respacelcci.md)
 - [0309.best-time-to-buy-and-sell-stock-with-cooldown](./algorithms/besttimetobuyandsellstockwithcooldown.md)
+
+### 分治法
+
 
 ### 查找算法
 - [0004.findMedianSortedArrays(二分查找)](./algorithms/findMedianSortedArrays.md)
