@@ -19,6 +19,7 @@ Leetcode--Solution
 |21|[MergeTwoSortedLists](https://leetcode-cn.com/problems/merge-two-sorted-lists/submissions/) | [Java](./algorithms/mergetwosortedlists.md)|Medium|
 |22|[GenerateParentheses](https://leetcode-cn.com/problems/generate-parentheses/) | [Java](./algorithms/generateparentheses.md)|Medium|
 |23|[MergeKSortedLists](https://leetcode-cn.com/problems/merge-k-sorted-lists/) | [Java](./algorithms/mergeksortedlists.md)|Hard|
+|31|[NextPermutation](https://leetcode-cn.com/problems/next-permutation/) | [Java](./algorithms/nextpermutation.md)|Medium|
 |63|[Unique Paths II](https://leetcode-cn.com/problems/unique-paths-ii/) | [C++](./algorithms/uniquepathsii.md)|Medium|
 |112|[Paths Sum](https://leetcode-cn.com/problems/path-sum/) | [C++](./algorithms/pathsum.md)|Easy|
 |174|[Dungeon Game](https://leetcode-cn.com/problems/dungeon-game/) | [C++](./algorithms/dungeongame.md)|Hard|
