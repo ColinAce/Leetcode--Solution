@@ -42,3 +42,6 @@ Leetcode--Solution
 
 ### 查找算法
 - [0004.findMedianSortedArrays(二分查找)](./algorithms/findMedianSortedArrays.md)
+
+### 回溯法
+- [0022.generate-parentheses](./algorithms/generateparentheses.md)
